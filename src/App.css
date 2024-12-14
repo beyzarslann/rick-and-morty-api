@@ -1,0 +1,93 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(9, 19, 132);
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.filters {
+  width: 80%;
+  padding: 0;
+  margin: 0;
+}
+
+.characters-table {
+  width: 320%; /* Tabloyu genişlet */
+  padding: 10px;
+  margin: 0;
+}
+
+.accordion {
+  border-radius: 8px;
+}
+
+/* Accordion başlıklarının boyutunu küçültme */
+.accordion .accordion-header {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.accordion .accordion-body {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.accordion .accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.filt {
+  font-size: 18px;
+  color: blueviolet;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  font-family: monospace;
+}
+
+.clear {
+  text-align: center;
+  padding: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* pagination düzeni ve hizalama */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+  cursor: not-allowed;
+}
